@@ -20,7 +20,7 @@ def merge_pdfs(directory):
     merger.close()
 
 def main():
-    root_directory = "D:\OICL\ESTATE MANAGEMENT\BOX 138 - Copy"  # Change this to the root directory of your PDFs
+    root_directory = "."  # Change this to the root directory of your PDFs
     subdirectories = [d for d in os.listdir(root_directory) if os.path.isdir(os.path.join(root_directory, d))]
 
     for subdir in subdirectories:
